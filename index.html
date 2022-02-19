@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chenburger 🍔</title>
+    <link rel="icon" href="https://thumbs.dreamstime.com/b/lunch-burger-icon-outline-lunch-burger-vector-icon-web-design-isolated-white-background-lunch-burger-icon-outline-style-173127884.jpg" />
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+    <header>
+
+
+        <div class="customize-burger">
+            <div>
+                <button class="add" id="addTomato">+</button>
+                <span>tomato</span>
+                <button class="remove" id="removeTomato">-</button>
+            </div>
+            <div>
+                <button class="add">+</button>
+                <span>cheese</span>
+                <button  class="remove">-</button>
+            </div>
+            <div>
+                <button class="add">+</button>
+                <span>lettuce</span>
+                <button class="remove">-</button>
+            </div>
+            <div>
+                <button class="add">+</button>
+                <span>meat</span>
+                <button class="remove">-</button>
+            </div>
+
+            <!-- <button class="add">+</button>
+            <span>tomato</span>
+            <button class="remove">-</button> -->
+
+            <div id="price-container">
+                <span id="price"></span>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="burger" id="root">
+                <div id="upperBun"></div>
+                <div id="fillings"></div>
+                <!-- <div class="lettuce">l</div>
+                <div class="tomato">t</div>
+                <div class="cheese">c</div>
+                <div class="meat">m</div> -->
+                <div id="lowerBun"></div> <!-- maybe put second in another div-->
+        </div>
+    </main>
+
+    <script src="site.js"></script>
+</body>
+</html>
