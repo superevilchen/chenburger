@@ -2,27 +2,34 @@
 
 const burger = document.getElementById("fillings");
 
-// const addTomato = document.querySelectorAll("add")[0];
-const addTomato = document.getElementById("addTomato");
-const addLettuce = document.querySelectorAll(".add")[1];
-const addCheese = document.querySelectorAll(".add")[2];
-const addMeat = document.querySelectorAll(".add")[3];
+const addTomato = document.getElementsByClassName("add")[0];
+const addLettuce = document.getElementsByClassName("add")[1];
+const addCheese = document.getElementsByClassName("add")[2];
+const addMeat = document.getElementsByClassName("add")[3];
 
-// const removeTomato = document.querySelectorAll("remove")[0];
-const removeTomato = document.getElementById("removeTomato");
-const removeLettuce = document.querySelectorAll("remove")[1];
-const removeCheese = document.querySelectorAll("remove")[2];
-const removeMeat = document.querySelectorAll("remove")[3];
+const removeTomato = document.getElementsByClassName("remove")[0];
+const removeLettuce = document.getElementsByClassName("remove")[1];
+const removeCheese = document.getElementsByClassName("remove")[2];
+const removeMeat = document.getElementsByClassName("remove")[3];
 
 let price = 5;
 
-addGlobalEventListener(addTomato, "tomato", 2);
-removeGlobalEventListener(removeTomato, "tomato", 2);
+addGlobalEventListener(addTomato, "tomato", 0.5);
+removeGlobalEventListener(removeTomato, "tomato", 0.5);
+
+addGlobalEventListener(addLettuce, "lettuce", 0.5);
+removeGlobalEventListener(removeLettuce, "lettuce", 0.5);
+
+addGlobalEventListener(addCheese, "cheese", 1);
+removeGlobalEventListener(removeCheese, "cheese", 1);
+
+addGlobalEventListener(addMeat, "meat", 10);
+removeGlobalEventListener(removeMeat, "meat", 10);
 
 function add(style, priceToAdd){
     const toAdd = document.createElement("div");
     toAdd.classList.add(style);
-    toAdd.innerHTML = "tomato";
+    toAdd.innerHTML = ".";
     burger.appendChild(toAdd);
     price += priceToAdd;
     updatePrice();
