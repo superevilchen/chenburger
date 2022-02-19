@@ -4,13 +4,17 @@ const burger = document.getElementById("fillings");
 
 const addTomato = document.getElementsByClassName("add")[0];
 const addLettuce = document.getElementsByClassName("add")[1];
-const addCheese = document.getElementsByClassName("add")[2];
-const addMeat = document.getElementsByClassName("add")[3];
+const addOnion = document.getElementsByClassName("add")[2];
+const addCheese = document.getElementsByClassName("add")[3];
+const addMeat = document.getElementsByClassName("add")[4];
+const addSauce = document.getElementsByClassName("add")[5];
 
 const removeTomato = document.getElementsByClassName("remove")[0];
 const removeLettuce = document.getElementsByClassName("remove")[1];
-const removeCheese = document.getElementsByClassName("remove")[2];
-const removeMeat = document.getElementsByClassName("remove")[3];
+const removeOnion = document.getElementsByClassName("remove")[2]
+const removeCheese = document.getElementsByClassName("remove")[3];
+const removeMeat = document.getElementsByClassName("remove")[4];
+const removeSauce = document.getElementsByClassName("remove")[5];
 
 const restart = document.getElementById("restart");
 
@@ -22,26 +26,27 @@ removeGlobalEventListener(removeTomato, "tomato", 0.5);
 addGlobalEventListener(addLettuce, "lettuce", 0.5);
 removeGlobalEventListener(removeLettuce, "lettuce", 0.5);
 
+addGlobalEventListener(addOnion, "onion", 0.5);
+removeGlobalEventListener(removeOnion, "onion", 0.5);
+
 addGlobalEventListener(addCheese, "cheese", 1);
 removeGlobalEventListener(removeCheese, "cheese", 1);
 
 addGlobalEventListener(addMeat, "meat", 10);
 removeGlobalEventListener(removeMeat, "meat", 10);
 
-function add(style, priceToAdd){
-    const toAdd = document.createElement("div");
-    toAdd.classList.add(style);
-    toAdd.innerHTML = ".";
-    burger.appendChild(toAdd);
-    price += priceToAdd;
-    updatePrice();
-}
+addGlobalEventListener(addSauce, "sauce", 1);
+removeGlobalEventListener(removeSauce, "sauce", 1);
 
 function addGlobalEventListener(element, style, priceToAdd){
     element.addEventListener('click', function(e){
         e.preventDefault();
-        add(style, priceToAdd);
-        element.classList.add("remove");
+        const toAdd = document.createElement("div");
+        toAdd.classList.add(style);
+        toAdd.innerHTML = ".";
+        burger.appendChild(toAdd);
+        price += priceToAdd;
+        updatePrice();
     })
 }
 

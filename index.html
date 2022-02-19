@@ -11,42 +11,48 @@
 <body>
 
     <header>
-        <span>🍔chenburger🍔</span>
+        <span class="neon">🍔 Space Buns 🍔</span>
     </header>
 
     <div id="hell">
     <aside>
 
         <div class="customize-burger">
-            <div>
-                <button class="add" id="addTomato">+</button>
-                <span>tomato</span>
-                <button class="remove" id="removeTomato">-</button>
-            </div>
-            <div>
-                <button class="add">+</button>
-                <span>lettuce</span>
-                <button  class="remove">-</button>
-            </div>
-            <div>
-                <button class="add">+</button>
-                <span>cheese</span>
-                <button class="remove">-</button>
-            </div>
-            <div>
-                <button class="add">+</button>
-                <span>meat</span>
-                <button class="remove">-</button>
-            </div>
-
-            <!-- <button class="add">+</button>
-            <span>tomato</span>
-            <button class="remove">-</button> -->
-
+            <table style="text-align: center;">
+                <tr>
+                    <td> <button class="add" id="addTomato">+</button></td>
+                    <td>Tomato</td>
+                    <td><button class="remove" id="removeTomato">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="add">+</button></td>
+                    <td>Lettuce</td>
+                    <td><button  class="remove">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="add">+</button></td>
+                    <td>Onion</td>
+                    <td><button class="remove">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="add">+</button></td>
+                    <td>Cheese</td>
+                    <td><button class="remove">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="add">+</button></td>
+                    <td>Meat</td>
+                    <td><button class="remove">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="add">+</button></td>
+                    <td>Sauce</td>
+                    <td><button class="remove">-</button></td>
+                </tr>
+            </table>
             <div id="price-container">
                 <span id="price">Price: 5</span>
             </div>
-
             <button id="restart">Restart</button>
         </div>
 
@@ -58,8 +64,9 @@
                 <div id="fillings"></div>
                 <!-- <div class="lettuce">l</div>
                 <div class="tomato">t</div>
-                <div class="cheese">c</div>
-                <div class="meat">m</div> -->
+                <div class="meat">
+                    <div class="cheese">c</div>
+                    m</div> -->
                 <div id="lowerBun"></div>
         </div>
     </main>
