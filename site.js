@@ -12,6 +12,8 @@ const removeLettuce = document.getElementsByClassName("remove")[1];
 const removeCheese = document.getElementsByClassName("remove")[2];
 const removeMeat = document.getElementsByClassName("remove")[3];
 
+const restart = document.getElementById("restart");
+
 let price = 5;
 
 addGlobalEventListener(addTomato, "tomato", 0.5);
@@ -36,17 +38,27 @@ function add(style, priceToAdd){
 }
 
 function addGlobalEventListener(element, style, priceToAdd){
-    element.addEventListener('click', function(){
+    element.addEventListener('click', function(e){
+        e.preventDefault();
         add(style, priceToAdd);
+        element.classList.add("remove");
     })
 }
 
 function removeGlobalEventListener(element, style, priceToDecrement){
-    element.addEventListener('click', function(){
-        const toRemove = document.getElementsByClassName(style)[0];
-        burger.removeChild(toRemove);
-        price -= priceToDecrement;
-        updatePrice();
+    element.addEventListener('click', function(e){
+
+        e.preventDefault();
+
+        if (document.getElementsByClassName(style).length > 0) {
+
+
+            const toRemove = document.getElementsByClassName(style)[0];
+            burger.removeChild(toRemove);
+            price -= priceToDecrement;
+            updatePrice();
+        }
+        // block remove button if 0 
     })
 }
 
@@ -54,3 +66,12 @@ function updatePrice(){
     const updatedPrice = document.getElementById("price");
     updatedPrice.innerHTML = `Price: ${price}`;
 }
+
+
+restart.addEventListener('click', function() {
+    while (burger.firstChild) {
+        burger.removeChild(burger.lastChild);
+      }
+      price = 5;
+      updatePrice();
+})
