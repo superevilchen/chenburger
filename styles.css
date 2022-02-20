@@ -22,7 +22,8 @@ html{
 
 #hell{
     display:grid;
-    grid-template: 99% 1% / 35% 65%;
+    /* grid-template: 99% 1% / 35% 65%; */
+    grid-template: 20% 20% 20% 20% 20% / 35% 65%;
     background-color: var(--background);
     background-image: url(assets/background.svg);
     background-attachment: fixed;
@@ -182,7 +183,8 @@ main{
 footer{
     background-color: var(--buttons-clickable);
     padding: 0.78rem;
-    grid-area: 3 / 1 / 3 / 3;
+    /* grid-area: 3 / 1 / 3 / 3; */
+    grid-area: 6 / 1 / 7 / 3;
     text-align: center;
     color: white;
 }
