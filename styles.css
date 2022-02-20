@@ -1,11 +1,10 @@
 :root{
-    --bun: #DFA06E;
-    --lettuce: #5FF070;
-    --onion: #6d35a1;
+    --lettuce: #C4E0A3;
+    --onion: #0095D0;
     --tomato: #DF2935;
-    --cheese: #FFDD4A;
+    --cheese: #E8C11A;
     --meat: #5A352A;
-    --sauce: #fc03f8;
+    --sauce: #F61AFC;
     --background: #27213C;
     --buttons-clickable: #A33B20;
     --buttons-unclickable: #A6A57A;
@@ -58,7 +57,7 @@ aside {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 2rem 2rem;
+    padding: 1rem 2rem;
     /* background-color: var(--cheese); */
 }
 
@@ -207,4 +206,5 @@ footer{
 
 footer a{
     color: white;
+    font-size: 13px;
 }
