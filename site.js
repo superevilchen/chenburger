@@ -78,3 +78,5 @@ restart.addEventListener('click', function() {
       price = 5;
       updatePrice();
 })
+
+console.log('hey buddy');

@@ -9,6 +9,11 @@
     --buttons-clickable: #A33B20;
 }
 
+html{
+    zoom: 125%;
+    background-color: var(--buttons-clickable);
+}
+
 *{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
