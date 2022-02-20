@@ -5,19 +5,14 @@
     --cheese: #E8C11A;
     --meat: #5A352A;
     --sauce: #F61AFC;
-    --background: #27213C;
+    --background: mediumorchid;
     --buttons-clickable: #A33B20;
-    --buttons-unclickable: #A6A57A;
 }
 
 *{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
     box-sizing: border-box;
-}
-
-body{
-    background-color: var(--background);
 }
 
 /* #left-hand{
@@ -33,7 +28,7 @@ body{
 #hell{
     display:grid;
     grid-template: 99% 1% / 35% 65%;
-    background-color: mediumorchid;
+    background-color: var(--background);
     background-image: url(assets/background.svg);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -151,45 +146,61 @@ main{
 }
 
 .lettuce{
-    background-color: var(--lettuce);
+    /* background-color: var(--lettuce); */
+    background-image: url(assets/lettuce.svg);
+    background-size: 285px;
     border-radius: 0.5rem;
     width: 285px;
-    color: var(--lettuce);
+    height: 20px;
+    color: var(--tomato);
 }
 
 .onion{
-    background-color: var(--onion);
+    /* background-color: var(--onion); */
+    background-image: url(assets/onion.svg);
+    background-size: 285px;
     border-radius: 0.5rem;
     width: 285px;
+    height: 21px;
     color: var(--onion);
 }
 
 .cheese{
     /* background-image: url(/assets/wave.svg); */
-    background-color: var(--cheese);
+    /* background-color: var(--cheese); */
+    background-image: url(assets/cheese.svg);
+    background-size: 285px;
     border-radius: 0.5rem;
     width: 285px;
-    height: 15px;
+    height: 17px;
+    color: var(--cheese);
 }
 /* make melting and random! */
 
 .tomato{
-    background-color: var(--tomato);
+    /* background-color: var(--tomato); */
+    background-image: url(assets/tomato.svg);
+    background-size: 285px;
     border-radius: 0.5rem;
     width: 285px;
+    height: 21px;
     color: var(--tomato);
 }
 
 .meat{
-    background-color: var(--meat);
+    /* background-color: var(--meat); */
+    background-image: url(assets/meat.svg);
+    background-size: 285px;
     border-radius: 0.5rem;
     width: 285px;
-    height: 30px;
+    height: 32px;
     color: var(--meat);
 }
 
 .sauce{
-    background-color: var(--sauce);
+    /* background-color: var(--sauce); */
+    background-image: url(assets/sauce.svg);
+    background-size: 285px;
     border-radius: 0.5rem;
     width: 285px;
     height: 10px;
@@ -198,7 +209,7 @@ main{
 
 footer{
     background-color: var(--buttons-clickable);
-    padding: 1rem;
+    padding: 0.78rem;
     grid-area: 3 / 1 / 3 / 3;
     text-align: center;
     color: white;

@@ -63,7 +63,6 @@ function removeGlobalEventListener(element, style, priceToDecrement){
             price -= priceToDecrement;
             updatePrice();
         }
-        // block remove button if 0 
     })
 }
 
@@ -71,7 +70,6 @@ function updatePrice(){
     const updatedPrice = document.getElementById("price");
     updatedPrice.innerHTML = `Price: ${price}`;
 }
-
 
 restart.addEventListener('click', function() {
     while (burger.firstChild) {
