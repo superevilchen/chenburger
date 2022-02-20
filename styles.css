@@ -10,7 +10,7 @@
 }
 
 html{
-    zoom: 125%;
+    scale: 125%;
     background-color: var(--buttons-clickable);
 }
 
