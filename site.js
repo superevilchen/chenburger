@@ -57,12 +57,12 @@ function removeGlobalEventListener(element, style, priceToDecrement){
 
         if (document.getElementsByClassName(style).length > 0) {
 
-
             const toRemove = document.getElementsByClassName(style)[0];
             burger.removeChild(toRemove);
             price -= priceToDecrement;
             updatePrice();
-        }
+
+        } 
     })
 }
 

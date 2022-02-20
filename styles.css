@@ -15,16 +15,6 @@
     box-sizing: border-box;
 }
 
-/* #left-hand{
-    position:relative; 
-    top:40px; 
-    left:160px; 
-    size-adjust: 50%;
-    width:100px; 
-    height:120px; 
-    z-index:4;
-} */
-
 #hell{
     display:grid;
     grid-template: 99% 1% / 35% 65%;
@@ -36,15 +26,7 @@
     margin: 0;
     width: 100%;
     height: 100%;
-    /* background-color: var(--background); */
 }
-
-/* header{
-    width: 100%;
-    height: 100%;
-    padding: 1rem;
-    text-align:center;
-} */
 
 aside {
     min-height: 555px;
@@ -53,7 +35,6 @@ aside {
     align-items: center;
     width: 100%;
     padding: 1rem 2rem;
-    /* background-color: var(--cheese); */
 }
 
 h2{
@@ -61,7 +42,6 @@ h2{
 }
 
 .customize-burger{
-    /* background-color: var(--lettuce); */
     background-image: url(assets/menu.svg);
     color: white;
     padding: 1.5rem;
@@ -116,7 +96,6 @@ button{
 
 main{
     min-height: 555px;
-    /* background-color: skyblue; */
     padding: 5rem;
 }
 
@@ -128,25 +107,20 @@ main{
 }
 
 #upperBun{
-    /* background-color: var(--bun); */
     background-image: url(assets/upper-bun.svg);
     background-size: 300px;
-    /* border-radius: 4rem 4rem 0rem 0rem; */
     width: 300px;
     height: 92px;
 }
 
 #lowerBun{
-    /* background-color: var(--bun); */
     background-image: url(assets/lower-bun.svg);
     background-size: 300px;
-    /* border-radius: 0rem 0rem 3rem 3rem; */
     width: 300px;
     height: 49px;
 }
 
 .lettuce{
-    /* background-color: var(--lettuce); */
     background-image: url(assets/lettuce.svg);
     background-size: 285px;
     border-radius: 0.5rem;
@@ -156,7 +130,6 @@ main{
 }
 
 .onion{
-    /* background-color: var(--onion); */
     background-image: url(assets/onion.svg);
     background-size: 285px;
     border-radius: 0.5rem;
@@ -166,8 +139,6 @@ main{
 }
 
 .cheese{
-    /* background-image: url(/assets/wave.svg); */
-    /* background-color: var(--cheese); */
     background-image: url(assets/cheese.svg);
     background-size: 285px;
     border-radius: 0.5rem;
@@ -175,10 +146,8 @@ main{
     height: 17px;
     color: var(--cheese);
 }
-/* make melting and random! */
 
 .tomato{
-    /* background-color: var(--tomato); */
     background-image: url(assets/tomato.svg);
     background-size: 285px;
     border-radius: 0.5rem;
@@ -188,7 +157,6 @@ main{
 }
 
 .meat{
-    /* background-color: var(--meat); */
     background-image: url(assets/meat.svg);
     background-size: 285px;
     border-radius: 0.5rem;
@@ -198,7 +166,6 @@ main{
 }
 
 .sauce{
-    /* background-color: var(--sauce); */
     background-image: url(assets/sauce.svg);
     background-size: 285px;
     border-radius: 0.5rem;
